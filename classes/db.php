@@ -17,13 +17,13 @@ class db {
      var $db = '';
     
     public function __construct() {
-        $this->db = '';
-        $this->user =' ';
-        $this->pw = '';
+        $this->db='jujubee';
+        $this->user='root';
+        $this->pw='S7e77en7';
     }
     
     function connect(){
-                 
+      
        $dbConnect = new PDO('mysql:host=localhost;dbname='. $this->db .';charset=utf8', $this->user , $this->pw);
        if(!$dbConnect){
            echo 'connection failed';
