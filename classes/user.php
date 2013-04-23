@@ -1,14 +1,21 @@
 <?php
-
-/*
+/**
+ * User Management Objects
+ * 
+ * Contains:
+ * register_user($pass,$registered,$db)
+ * login_user($pass,$login,$db)
+ * get_all_users($db)
+ * get_single_users($db)
+ * edit_user($db,$id,$usr,$eml)
+ * delete_user($db,$id)
+ * 
+ * 
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- */
-
-/**
- * Description of users
- *
- * @author dliddell
+ * 
+ * @author Dominic M. Liddell <dominic@dmlwebs.com>
+ * @version 1.0
  */
 class user {
     
@@ -26,18 +33,27 @@ class user {
         
         if($stmt->execute()){//run statement and evaluate success
             //if success, send confirmation
-            echo "Thank you for your registration. You will receive an email with your login details."; 
-            return 1;
+           echo "Thank you for your registration. You will receive an email with your login details.";
+           return 1;
         }
         else{
             echo "Registration was not successful.";
+            session_destroy();
             return 0;
         }
         
     }
     
+    function login_user($pass,$db){ 
+            echo $sid = session_id(); 
+            unset($_SESSION['loginid']);
+            $user = ($_SESSION['user']);
+           
+        return $user;
+    }
+    
     function get_all_users($db){ //get all registered users
-        $stmt = $db->query("SELECT username,email,$id FROM $this->table");
+        $stmt = $db->query("SELECT username,email,id FROM $this->table");
         $results = $stmt->fetchAll();
         //use $results
         
@@ -92,4 +108,4 @@ class user {
     
 }
 
-?>
+//file located in: "document_root/classes/"
