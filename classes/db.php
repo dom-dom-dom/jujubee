@@ -1,14 +1,11 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of db
- *
- * @author dliddell
+ * Create database connection
+ * 
+ * This class is used by CRUD objects for SQL queries
+ * 
+ * @author Dominic M. Liddell <dominic@dmlwebs.com>
+ * @version 1.0
  */
 class db {
     
@@ -17,9 +14,9 @@ class db {
      var $db = '';
     
     public function __construct() {
-        $this->db='database';
-        $this->user='user';
-        $this->pw='password';
+        $this->db='jujubee';
+        $this->user='root';
+        $this->pw='S7e77en7';
     }
     
     function connect(){
@@ -34,4 +31,4 @@ class db {
     }
 }
 
-?>
+//file located in: "document_root/classes/"
