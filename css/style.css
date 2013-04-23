@@ -6,58 +6,10 @@
         Purpose of the stylesheet follows.
 */
 
-body{
-    font-size: 100%;
-    line-height:1.5em;
-}
 
-#container{
-    width:75%;
-    margin-right:auto;
-    margin-left:auto;
+form{
+    width:50%;
+    margin: 20% auto 0 auto;               
 }
-#registeruser,#loginuser{
-    width:35%;
-    height:275px;
-    float:left;
-    border: 1px solid #000;
-    border-radius:2%;
-    margin:1%;
-    padding:1%;
-    text-align:center;
-    overflow:hidden;
-}
-  
-#registeruser input,#loginuser input{
-    width:95%;
-    height:25px;
-    display:block;
-    margin:1%;
-    margin-top:5%;
-    margin-right: auto;
-    margin-left: auto;
-    padding:1%;
-    font-size: 1em;
-}
-
-#registeruser #register,#loginuser #login{
-    width:100%;
-    height:30px;
-    text-transform: capitalize;
-    font-size:1em;
-}
-
-#loginuser #remember,#loginuser #remember_label{
-    width: auto !important;
-    float:left;
-}
-
-#loginuser #remember{
-    margin-right: 3%;
-    vertical-align:text-top;
-}
-
-#loginuser a{
-    float:right;
-    text-decoration:none;
-}
+            
+ 

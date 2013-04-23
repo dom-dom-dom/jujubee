@@ -1,11 +1,14 @@
 <?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
- * Create database connection
- * 
- * This class is used by CRUD objects for SQL queries
- * 
- * @author Dominic M. Liddell <dominic@dmlwebs.com>
- * @version 1.0
+ * Description of db
+ *
+ * @author dliddell
  */
 class db {
     
@@ -31,4 +34,4 @@ class db {
     }
 }
 
-//file located in: "document_root/classes/"
+?>
