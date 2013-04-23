@@ -14,9 +14,9 @@ class db {
      var $db = '';
     
     public function __construct() {
-        $this->db='jujubee';
-        $this->user='root';
-        $this->pw='S7e77en7';
+        $this->db='database';
+        $this->user='user';
+        $this->pw='password';
     }
     
     function connect(){
